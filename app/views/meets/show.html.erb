@@ -1,0 +1,20 @@
+<div class="contentStyle">  
+<!-->  <strong> Athlete</strong>
+  <%= @meet.athleteNum %>
+  
+<br />
+  <strong>100M</strong>
+  <%= @meet.event1 %>
+</p>
+
+<br />
+  <strong>200M</strong>
+  <%= @meet.event2 %>
+<br />
+  <strong>400M</strong>
+  <%= @meet.event3 %>
+<br />
+-->
+<%= link_to 'Edit', edit_meet_path(@meet) %> |
+<%= link_to 'Back', meets_path %>
+</div>

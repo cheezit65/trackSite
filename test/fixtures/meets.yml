@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+   athleteNum: 1
+  event1: 2015-10-17 10:11:22
+  event2: 2015-10-17 10:11:22
+  event3: 2015-10-17 10:11:22
+
+two:
+   athleteNum: 1
+  event1: 2015-10-17 10:11:22
+  event2: 2015-10-17 10:11:22
+  event3: 2015-10-17 10:11:22

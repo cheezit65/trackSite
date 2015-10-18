@@ -1,0 +1,46 @@
+<div class="contentStyle">
+	<h1>2015 Meet Results</h1>
+	<%= link_to 'Enter Results for a New Meet', new_meet_path %>
+ <%= puts li = Athlete.find(1) %>
+<h3>
+<!--  <%= "#{li.id} #{li.firstName} #{li.lastName}" %>
+<%= puts li2 = Meet.find(li) %>
+<%= "#{li2.event1} #{li2.event2} #{li2.event3}" %>
+-->
+</h3>
+	<table>
+		<thead>
+			<tr>
+				<th>Athlete Name</th>
+				<hr>
+			</tr>
+		</thead>
+
+		<tbody>
+			<% @meets.each do |meet| %>
+			<tr>
+				<td><%= puts num = meet.athleteNum %>
+				    <%= puts li  = Athlete.find(num) %>
+					<%= "#{li.id} #{li.firstName} #{li.lastName}" %></td>
+			</tr>
+			<tr>
+				<th>100M</th><td><%= meet.event1.strftime("%M:%S.%2N") %></td></th>
+			</tr>
+			<tr>
+				<th>200M</th><td><%= meet.event2.strftime("%M:%S.%2N") %></td></th>
+			</tr>
+			<tr>
+				<th>400M</th><td><%= meet.event3.strftime("%M:%S.%2N") %></td>
+			</tr>
+			<tr>
+				<td><%= link_to 'Show', meet %></td>
+				<td><%= link_to 'Edit', edit_meet_path(meet) %></td>
+				<td><%= link_to 'Destroy', meet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+
+	<br>
+
+</div>

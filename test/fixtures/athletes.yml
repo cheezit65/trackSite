@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  athleteNum: 1
+  firstName: MyString
+  lastName: MyString
+  birthYear: 1
+
+two:
+  athleteNum: 1
+  firstName: MyString
+  lastName: MyString
+  birthYear: 1

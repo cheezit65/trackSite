@@ -1,0 +1,20 @@
+<div class="contentStyle">  
+	
+	
+<strong> Athlete Number:</strong>
+  <%= @athlete. athleteNum %>
+<br />
+  <strong>First Name:</strong>
+  <%= @athlete.firstName %>
+<br />
+  <strong>Last Name:</strong>
+  <%= @athlete.lastName %>
+<br />
+  <strong>Birth Year:</strong>
+  <%= @athlete.birthYear %>
+<br />
+<br />
+
+<%= link_to 'Edit', edit_athlete_path(@athlete) %> |
+<%= link_to 'Back', athletes_path %>
+</div>
