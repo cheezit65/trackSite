@@ -28,6 +28,6 @@ When(/^I initiate "Create Athlete"$/) do
   browser.input(:name => 'commit').click
 end
 
-Then(/^I should see the new athlete in the page that opens$/) do |arg1|
+Then(/^I should see the new athlete in the page that opens$/) do
 puts browser.text.include? 'Bradley'
 end

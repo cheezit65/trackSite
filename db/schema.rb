@@ -13,22 +13,21 @@
 
 ActiveRecord::Schema.define(version: 20151017230722) do
 
+  create_table "athletes", force: :cascade do |t|
+    t.integer  "athleteNum"
+    t.string   "lastName"
+    t.string   "firstName"
+    t.string   "birthYear"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "line_items", force: :cascade do |t|
     t.integer  "athlete_id"
     t.integer  "meet_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-  
-  create_table "athletes", force: :cascade do |t|
-    t.integer  "athleteNum"
-    t.string     "lastName"
-    t.string     "firstName"
-    t.string     "birthYear"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 
   create_table "meets", force: :cascade do |t|
     t.integer  "athleteNum"

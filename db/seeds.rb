@@ -8,7 +8,22 @@
 Athlete.delete_all
 # . . . 
 Athlete.create(athleteNum: '1',
+  firstName: 'Jeff',
+  lastName: 'Hogan',
+  birthYear: '2001'
+)
+Athlete.create(athleteNum: '2',
   firstName: 'Terry',
   lastName: 'Foster',
-  birthYear: '1997'
+  birthYear: '2001'
+)
+Athlete.create(athleteNum: '3',
+  firstName: 'Marissa',
+  lastName: 'Tomei',
+  birthYear: '2004'
+)
+Athlete.create(athleteNum: '4',
+  firstName: 'Stepanie',
+  lastName: 'Ogle',
+  birthYear: '2004'
 )

@@ -1,8 +1,7 @@
-source 'https://rubygems.org'
+  source 'https://rubygems.org'
 
 gem "cucumber"
 gem "capybara"
-gem "selenium-webdriver"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
