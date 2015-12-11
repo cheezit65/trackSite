@@ -22,15 +22,16 @@
 				<td><%= puts num = meet.athleteNum %>
 				    <%= puts li  = Athlete.find(num) %>
 					<%= "#{li.id} #{li.firstName} #{li.lastName}" %></td>
+					
 			</tr>
 			<tr>
-				<th>100M</th><td><%= meet.event1.strftime("%M:%S.%2N") %></td></th>
+				<th>100M</th><td><%= meet.event1 %></td></th>
 			</tr>
 			<tr>
-				<th>200M</th><td><%= meet.event2.strftime("%M:%S.%2N") %></td></th>
+				<th>200M</th><td><%= meet.event2 %></td></th>
 			</tr>
 			<tr>
-				<th>400M</th><td><%= meet.event3.strftime("%M:%S.%2N") %></td>
+				<th>400M</th><td><%= meet.event3 %></td>
 			</tr>
 			<tr>
 				<td><%= link_to 'Show', meet %></td>

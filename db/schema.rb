@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151017230722) do
+ActiveRecord::Schema.define(version: 20151126145124) do
 
   create_table "athletes", force: :cascade do |t|
     t.integer  "athleteNum"
@@ -29,13 +29,22 @@ ActiveRecord::Schema.define(version: 20151017230722) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "meets", force: :cascade do |t|
-    t.integer  "athleteNum"
-    t.time     "event1"
-    t.time     "event2"
-    t.time     "event3"
+  create_table "meet_names", force: :cascade do |t|
+    t.integer  "meetNum"
+    t.string   "meetName"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date     "meet_date"
+  end
+
+  create_table "meets", force: :cascade do |t|
+    t.integer  "athleteNum"
+    t.decimal  "event1"
+    t.decimal  "event2"
+    t.decimal  "event3"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "meetNum"
   end
 
   create_table "results", force: :cascade do |t|

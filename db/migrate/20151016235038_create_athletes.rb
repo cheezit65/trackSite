@@ -5,7 +5,6 @@ class CreateAthletes < ActiveRecord::Migration
       t.string :firstName
       t.string :lastName
       t.integer :birthYear
-
       t.timestamps null: false
     end
   end

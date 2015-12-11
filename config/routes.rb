@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :meet_names
   resources :line_items
   resources :results
   get 'welcome/index'

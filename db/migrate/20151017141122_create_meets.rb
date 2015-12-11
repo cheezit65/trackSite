@@ -1,6 +1,7 @@
 class CreateMeets < ActiveRecord::Migration
   def change
     create_table :meets do |t|
+      t.integer :meetNum
       t.integer :athleteNum
       t.time :event1
       t.time :event2

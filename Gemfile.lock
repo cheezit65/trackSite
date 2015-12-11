@@ -90,6 +90,9 @@ GEM
     multi_test (0.1.2)
     nokogiri (1.6.6.2-x86-mingw32)
       mini_portile (~> 0.6.0)
+    passenger (5.0.22)
+      rack
+      rake (>= 0.8.1)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -120,6 +123,19 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.0)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.0)
     sass (3.4.19)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -167,7 +183,9 @@ DEPENDENCIES
   cucumber
   jbuilder (~> 2.0)
   jquery-rails
+  passenger
   rails (= 4.2.4)
+  rspec (~> 3.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   sqlite3

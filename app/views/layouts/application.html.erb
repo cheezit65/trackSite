@@ -33,13 +33,15 @@
           <div id="nav1">
             <ul>
               <li><%= link_to 'HOME', welcome_index_path %></li>
-              <li><%= link_to 'TRACK MEETS', meets_path %></li>
+              <li><%= link_to 'TRACK MEETS', meet_names_path %></li>
               <li><%= link_to 'OHIO ROCKET ROSTER', athletes_path %></li>
               <li><%= link_to 'FIND ATHLETE RESULTS', results_path %></li>
+              <li><%= link_to 'MEET RESULTS', meets_path %></li>
             </ul>
           </div><!-- end horizontal navigation --><!-- content -->
 
           <div id="content">
+          	
             <%= yield %>
           </div>
         </div>

@@ -27,6 +27,19 @@ div .contentStyle2 {
     padding-left: 50px;
 	text-align:center;
 }
+
+div .contentStyle3 {
+	padding-top: 2px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 90px;
+	text-align:left;
+
+  	color: #000000;
+  	font-size: 18px;
+  	clear: both;
+}
+
 html {
   background: #f2f3f7;
 }

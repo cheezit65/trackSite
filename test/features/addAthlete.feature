@@ -12,4 +12,5 @@ Scenario: Add a new athlete to the Roster
     And his last name is "Watson"
     And his Birth Year is "1965"
     When I initiate "Create Athlete"
-    Then I should see the new athlete in the page that opens
+    And I wait 5 seconds
+    Then I expect to see the new athlete in the page that opens

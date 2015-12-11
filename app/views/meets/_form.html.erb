@@ -17,15 +17,15 @@
   </div>
   <div class="field">
     <%= f.label '100 Meter Dash' %><br>
-    <%= f.time_select :event1 %>
+    <%= f.number_field(:event1, in: 1.0..200.0, step: 0.01) %>
   </div>
   <div class="field">
     <%= f.label '200 Meter Dash' %><br>
-    <%= f.time_select :event2 %>
+    <%= f.number_field(:event2, in: 1.0..200.0, step: 0.01) %>
   </div>
   <div class="field">
     <%= f.label '400 Meter Dash' %><br>
-    <%= f.time_select :event3 %>
+    <%= f.number_field(:event3, in: 1.0..200.0, step: 0.01) %>
   </div>
   <div class="actions">
     <%= f.submit %>
